@@ -17,6 +17,6 @@ I mainly used for compiling [Typst](https://typst.app/) document with source cod
 
 Using [tbump](https://github.com/your-tools/tbump).
 
-```shell
-tbump 0.0.1
-```
+## License
+
+[MIT](./LICENSE)
