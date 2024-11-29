@@ -1,0 +1,22 @@
+github_url = "https://github.com/SnO2WMaN/install-juliamono-action"
+
+[version]
+current = "v0.0.1"
+
+regex = '''
+  (?P<major>\d+)
+  \.
+  (?P<minor>\d+)
+  \.
+  (?P<patch>\d+)
+  '''
+
+[git]
+message_template = "Bump to {new_version}"
+tag_template = "v{new_version}"
+
+[[file]]
+src = "action.yml"
+
+[[file]]
+src = "README.md"
