@@ -8,7 +8,7 @@ I mainly used for compiling [Typst](https://typst.app/) document with source cod
 ## Usage
 
 ```yaml
-- uses: SnO2WMaN/install-juliamono-action
+- uses: SnO2WMaN/install-juliamono-action@0.0.0
 ```
 
 ## Developing
@@ -18,5 +18,5 @@ I mainly used for compiling [Typst](https://typst.app/) document with source cod
 Using [tbump](https://github.com/your-tools/tbump).
 
 ```shell
-tbump 1.0.0
+tbump 0.0.0
 ```
