@@ -1,0 +1,14 @@
+name: "Install JuliaMono"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Install "JuliaMono"
+      shell: bash
+      working-directory: ${{ runner.temp }}
+      run: |
+        wget -O julia-mono.zip https://github.com/cormullion/juliamono/releases/download/v0.058/JuliaMono-ttf.zip
+        unzip julia-mono.zip -d julia-mono
+        rm julia-mono/LICENSE
+        mv julia-mono /usr/share/fonts/julia-mono
+        fc-cache -fv
